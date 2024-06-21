@@ -1,48 +1,39 @@
 /* display grid property */
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-areas:
-    'navesection navesection navesection navesection navesection navesection'
-    'sidemenua sidemenua bannersection bannersection bannersection sidemenub'
-    'maingallery maingallery maingallery maingallery maingallery maingallery'
-    'footersection footersection footersection footersection footersection footersection'
-;
-}
-#navesection{
-    background-color: blue;
-   grid-area: navesection; 
-}
-#bannersection{
-    
-    grid-area: bannersection;
-}
-#maingallery{
-    background-color: aquamarine;
-grid-area: maingallery;
-}
-#footersection{
-    background-color: blanchedalmond;
-    grid-area: footersection;
-}
-#sidemenua{
-    background-color: blue;
-    grid-area: sidemenua;
-    
-    }
-    #sidemenub{
-        background-color: brown;
-        grid-area: sidemenub;
-    }
-    @media only screen and (max: width 600px);{.grid-container{
-        display: grid;
-        grid-template-areas:
         'navesection navesection navesection navesection navesection navesection'
-        'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
-        'bannersection bannersection bannersection bannersection bannersection bannersection'
-        'sidemenub sidemenub sidemenub sidemenub sidemenub sidemenub'
+        'sidemenua sidemenua bannersection bannersection bannersection sidemenub'
         'maingallery maingallery maingallery maingallery maingallery maingallery'
         'footersection footersection footersection footersection footersection footersection'
     ;
-    }
-        
-    }
+}
+
+#navesection {
+    grid-area: navesection;
+    background-color: green;
+}
+
+#bannersection {
+    grid-area: bannersection;
+}
+
+#maingallery {
+    background-color: aquamarine;
+    grid-area: maingallery;
+}
+
+#footersection {
+    background-color: blanchedalmond;
+    grid-area: footersection;
+}
+
+#sidemenua {
+    background-color: black;
+    grid-area: sidemenub;
+}
+
+#sidemenub {
+    background-color: red;
+    grid-area: sidemenub;
+}
